@@ -17,7 +17,7 @@ const item = {
 
 export default function Hero() {
   return (
-    <section id="top" className="container-narrow pt-24 pb-16 sm:pt-32 sm:pb-24">
+    <section id="top" className="container-narrow pt-12 pb-6 sm:pt-20 sm:pb-10">
       <motion.div variants={container} initial="hidden" animate="show">
         <motion.div
           variants={item}
