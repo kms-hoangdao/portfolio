@@ -61,16 +61,30 @@ export const experience = [
   {
     company: 'KMS Technology',
     role: 'Full Stack Developer',
+    type: 'Product engineering · outsourced teams',
     period: 'Aug 2024 — Present',
     summary:
-      'Building cross-platform streaming experiences for NFHS Network, partnering with PlayOn! Sports.',
+      "Embedded across product engagements — InvoCare (a 25+ repo funeral-services suite), NFHS Network with PlayOn! Sports, and Birdseye Security.",
+    highlights: [
+      'Ship features across the InvoCare suite (Barndoor platform + FCRM apps)',
+      'Build streaming and clipping features for NFHS Network on web and mobile',
+      'Integrate Claude Code / Copilot into daily delivery and author project-level rules + skills',
+    ],
+    stack: ['React', 'React Native', 'TypeScript', 'Node.js', 'Firebase', 'Claude Code'],
   },
   {
     company: 'Code Engine Studio',
     role: 'Full Stack Developer',
+    type: 'Agency · client products',
     period: 'Jul 2021 — Jul 2024',
     summary:
-      'Delivered web and mobile products for clients across security, sports, education, and non-profit sectors.',
+      'Three years building web and mobile products for clients across visual testing tooling, non-profits, and sports analytics.',
+    highlights: [
+      "Built Visual Testing App — automated cross-browser visual regression with Playwright + WebSockets",
+      "Delivered Barnardo's AU site on Liferay 7.4 with a React frontend and headless APIs",
+      'Built chat and grading systems for QwikCut on Angular + React Native; mentored freshers via code reviews',
+    ],
+    stack: ['React', 'Angular', 'React Native', 'Node.js', 'MongoDB', 'Liferay'],
   },
 ]
 
@@ -110,6 +124,7 @@ export const photography = {
 export type Project = {
   name: string
   tagline: string
+  company: string
   description: string
   stack: string[]
   highlights: string[]
@@ -119,6 +134,7 @@ export const projects: Project[] = [
   {
     name: 'InvoCare',
     tagline: "Australia's largest funeral services group",
+    company: 'KMS Technology',
     description:
       "A 25+ repository product suite spanning two product families — Barndoor (platform / auth / shared services) and FCRM (Funeral CRM apps and APIs) — plus supporting services for documents, migrations, and integrations. Used by funeral operators across Australia and New Zealand.",
     stack: [
@@ -140,6 +156,7 @@ export const projects: Project[] = [
   {
     name: 'NFHS Network',
     tagline: 'High school sports streaming · PlayOn! Sports',
+    company: 'KMS Technology',
     description:
       'The leading platform for live and on-demand high school sports in the U.S. Partners with 44+ state associations covering 27 sports across web, mobile, and TV.',
     stack: [
@@ -160,6 +177,7 @@ export const projects: Project[] = [
   {
     name: 'Birdseye Security',
     tagline: 'Remote security & facility supervision',
+    company: 'KMS Technology',
     description:
       'A platform serving industries across North America that augments and replaces traditional onsite security with remote supervision.',
     stack: [
@@ -180,6 +198,7 @@ export const projects: Project[] = [
   {
     name: 'Visual Testing App',
     tagline: 'Automated visual regression at scale',
+    company: 'Code Engine Studio',
     description:
       'An internal tool that automates visual consistency checks across browsers and devices, reducing manual QA effort.',
     stack: [
@@ -200,6 +219,7 @@ export const projects: Project[] = [
   {
     name: "Barnardo's",
     tagline: "Australia's children charity",
+    company: 'Code Engine Studio',
     description:
       "Public-facing site for Barnardo's AU — a children's charity protecting and supporting young people.",
     stack: ['React 16', 'Liferay 7.4', 'TypeScript', 'Styled-components', 'ClayUI'],
@@ -212,6 +232,7 @@ export const projects: Project[] = [
   {
     name: 'QwikCut',
     tagline: 'Cloud sports video management',
+    company: 'Code Engine Studio',
     description:
       'A cloud platform for film storage, stat breakdowns, analytics, highlight editing, and recruiting — used by schools, clubs, and rec teams.',
     stack: ['Angular 13', 'Node.js', 'MongoDB', 'React Native', 'TypeScript'],
