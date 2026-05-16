@@ -1,0 +1,21 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.env
+.env.*
+!.env.example
+.vscode/*
+!.vscode/extensions.json
+
+# Local tooling
+.claude/
+
+# Personal docs (kept locally only)
+CV*.pdf
+
+# TS composite build artifacts
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
