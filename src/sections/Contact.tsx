@@ -33,13 +33,13 @@ export default function Contact() {
               <a
                 href={c.href}
                 {...(external && { target: '_blank', rel: 'noreferrer noopener' })}
-                className="group flex items-center justify-between rounded-xl border border-ink-200 bg-white/60 px-4 py-3 transition-all hover:border-ink-400"
+                className="group flex items-center justify-between rounded-xl border border-ink-200 bg-white/60 px-4 py-3 transition-all hover:border-sun-300"
               >
                 <span className="flex items-center gap-3 text-sm text-ink-700">
                   <Icon className="h-4 w-4 text-ink-500" />
                   {c.label}
                 </span>
-                <ArrowUpRight className="h-4 w-4 text-ink-400 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-ink-900" />
+                <ArrowUpRight className="h-4 w-4 text-ink-400 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-sun-600" />
               </a>
             </motion.li>
           )

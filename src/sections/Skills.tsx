@@ -19,7 +19,7 @@ export default function Skills() {
               {group.items.map((item) => (
                 <li
                   key={item}
-                  className="rounded-full border border-ink-200 bg-white/60 px-3 py-1 text-sm text-ink-700 transition-colors hover:border-ink-400 hover:text-ink-900"
+                  className="rounded-full border border-ink-200 bg-white/60 px-3 py-1 text-sm text-ink-700 transition-colors hover:border-sun-400 hover:text-ink-900"
                 >
                   {item}
                 </li>

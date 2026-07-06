@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { ArrowUpRight } from 'lucide-react'
 import Section from '../components/Section'
 import { projects } from '../data/portfolio'
 
@@ -13,12 +14,24 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.45, delay: (i % 3) * 0.05 }}
-            className="group rounded-2xl border border-ink-200 bg-white/60 p-6 transition-all hover:border-ink-400 hover:shadow-sm"
+            className="group rounded-2xl border border-ink-200 bg-white/60 p-6 transition-all hover:border-sun-300 hover:shadow-sm"
           >
             <header className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-              <h3 className="text-lg font-medium text-ink-900">
-                {project.name}
-              </h3>
+              {project.link ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center gap-1 text-lg font-medium text-ink-900 transition-colors hover:text-sun-600"
+                >
+                  {project.name}
+                  <ArrowUpRight className="h-4 w-4 text-ink-400 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-sun-500" />
+                </a>
+              ) : (
+                <h3 className="text-lg font-medium text-ink-900">
+                  {project.name}
+                </h3>
+              )}
               <span className="font-mono text-xs text-ink-500">
                 {project.tagline}
               </span>
@@ -34,7 +47,7 @@ export default function Projects() {
                   key={h}
                   className="flex gap-2 text-sm leading-relaxed text-ink-600"
                 >
-                  <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-ink-400" />
+                  <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-sun-500" />
                   <span>{h}</span>
                 </li>
               ))}

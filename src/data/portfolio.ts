@@ -128,6 +128,7 @@ export type Project = {
   description: string
   stack: string[]
   highlights: string[]
+  link?: string
 }
 
 export const projects: Project[] = [
@@ -135,8 +136,9 @@ export const projects: Project[] = [
     name: 'InvoCare',
     tagline: "Australia's largest funeral services group",
     company: 'KMS Technology',
+    link: 'https://www.invocare.com.au',
     description:
-      "A 25+ repository product suite spanning two product families — Barndoor (platform / auth / shared services) and FCRM (Funeral CRM apps and APIs) — plus supporting services for documents, migrations, and integrations. Used by funeral operators across Australia and New Zealand.",
+      'A 25+ repository funeral-services suite — Barndoor (platform / auth / shared services) and FCRM (Funeral CRM apps and APIs) — used by operators across Australia and New Zealand.',
     stack: [
       'React',
       'TypeScript',
@@ -147,16 +149,15 @@ export const projects: Project[] = [
       'GitHub Copilot',
     ],
     highlights: [
-      'Contribute across the multi-repo suite — Barndoor platform, FCRM web/APIs, and shared services',
-      'Integrated Gen-AI assistance (Claude Code, Copilot) into daily delivery — accelerating feature work, refactors, and test scaffolding',
-      'Author project-level rules (CLAUDE.md) and reusable Claude skills so AI output stays aligned with the suite\'s conventions across repos',
-      'Coordinate cross-repo changes with backend teams on contracts, auth flows, and performance',
+      'Ship features across the multi-repo suite — Barndoor platform, FCRM web/APIs, and shared services',
+      'Author project-level rules (CLAUDE.md) and reusable Claude skills that keep AI-assisted delivery aligned with suite conventions across repos',
     ],
   },
   {
     name: 'NFHS Network',
     tagline: 'High school sports streaming · PlayOn! Sports',
     company: 'KMS Technology',
+    link: 'https://www.nfhsnetwork.com',
     description:
       'The leading platform for live and on-demand high school sports in the U.S. Partners with 44+ state associations covering 27 sports across web, mobile, and TV.',
     stack: [
@@ -168,16 +169,15 @@ export const projects: Project[] = [
       'LaunchDarkly',
     ],
     highlights: [
-      'Built reusable UI components and hooks to accelerate feature delivery',
-      'Shipped video streaming and clipping with robust error handling',
+      'Shipped video streaming and clipping on web and mobile with robust error handling',
       'Maintained ~85% unit-test coverage and authored automation scripts',
-      'Presented sprint outcomes to clients to ensure alignment',
     ],
   },
   {
     name: 'Birdseye Security',
     tagline: 'Remote security & facility supervision',
     company: 'KMS Technology',
+    link: 'https://birdseyesecurity.com',
     description:
       'A platform serving industries across North America that augments and replaces traditional onsite security with remote supervision.',
     stack: [
@@ -191,7 +191,6 @@ export const projects: Project[] = [
     ],
     highlights: [
       'Reduced initial page load by 30% through targeted performance work',
-      'Delivered 3 new features in collaboration with the team',
       'Diagnosed and resolved production issues and authored release notes',
     ],
   },
@@ -210,22 +209,20 @@ export const projects: Project[] = [
       'MongoDB',
     ],
     highlights: [
-      'Set up real-time updates via WebSockets',
-      'Refactored the notification feature for clarity and reliability',
+      'Built real-time cross-browser test runs with Playwright + WebSockets',
       'Improved UX with React Query caching and optimistic updates',
-      'Mentored freshers through reviews and pairing',
     ],
   },
   {
     name: "Barnardo's",
     tagline: "Australia's children charity",
     company: 'Code Engine Studio',
+    link: 'https://www.barnardos.org.au',
     description:
       "Public-facing site for Barnardo's AU — a children's charity protecting and supporting young people.",
     stack: ['React 16', 'Liferay 7.4', 'TypeScript', 'Styled-components', 'ClayUI'],
     highlights: [
       'Integrated headless Liferay APIs into the React frontend',
-      'Configured Vite and Client Extensions for the Liferay environment',
       'Partnered directly with client stakeholders and designers',
     ],
   },
@@ -233,12 +230,12 @@ export const projects: Project[] = [
     name: 'QwikCut',
     tagline: 'Cloud sports video management',
     company: 'Code Engine Studio',
+    link: 'https://www.qwikcut.com',
     description:
       'A cloud platform for film storage, stat breakdowns, analytics, highlight editing, and recruiting — used by schools, clubs, and rec teams.',
     stack: ['Angular 13', 'Node.js', 'MongoDB', 'React Native', 'TypeScript'],
     highlights: [
-      'Built chat and grading systems end-to-end',
-      'Designed new database schemas',
+      'Built chat and grading systems end-to-end on Angular + React Native',
       'Shipped mobile features and added automated tests',
     ],
   },

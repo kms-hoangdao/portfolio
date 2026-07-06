@@ -15,9 +15,9 @@ export default function Experience() {
             transition={{ duration: 0.4, delay: i * 0.08 }}
             className="relative mb-8 last:mb-0"
           >
-            <span className="absolute -left-[31px] top-2.5 h-2.5 w-2.5 rounded-full bg-ink-900 ring-4 ring-ink-50" />
+            <span className="absolute -left-[31px] top-2.5 h-2.5 w-2.5 rounded-full bg-sun-500 ring-4 ring-ink-50" />
 
-            <div className="rounded-xl border border-ink-200 bg-white/60 p-5 transition-all hover:border-ink-400 hover:shadow-sm">
+            <div className="rounded-xl border border-ink-200 bg-white/60 p-5 transition-all hover:border-sun-300 hover:shadow-sm">
               <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <h3 className="text-base font-medium text-ink-900">
                   {job.company}
@@ -43,7 +43,7 @@ export default function Experience() {
                     key={h}
                     className="flex gap-2 text-sm leading-relaxed text-ink-600"
                   >
-                    <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-ink-400" />
+                    <span className="mt-2 h-1 w-1 flex-shrink-0 rounded-full bg-sun-500" />
                     <span>{h}</span>
                   </li>
                 ))}

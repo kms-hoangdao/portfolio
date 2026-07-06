@@ -21,14 +21,14 @@ export default function Nav() {
           href="#top"
           className="font-mono text-sm font-medium tracking-tight text-ink-900"
         >
-          hoang<span className="text-ink-400">.</span>helios
+          hoang<span className="text-sun-500">.</span>helios
         </a>
         <ul className="flex items-center gap-6">
           {links.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-ink-500 transition-colors hover:text-ink-900"
+                className="text-sm text-ink-500 transition-colors hover:text-sun-600"
               >
                 {link.label}
               </a>

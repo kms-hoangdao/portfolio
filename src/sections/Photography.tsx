@@ -10,7 +10,7 @@ export default function Photography() {
         <p className="text-base leading-relaxed text-ink-700">
           {photography.intro}
         </p>
-        <p className="font-mono text-xs uppercase tracking-[0.18em] text-ink-500">
+        <p className="font-mono text-xs uppercase tracking-[0.18em] text-sun-600">
           {photography.motto}
         </p>
       </div>
@@ -50,7 +50,7 @@ export default function Photography() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.4 }}
-        className="group mt-8 inline-flex items-center gap-2 text-sm text-ink-900"
+        className="group mt-8 inline-flex items-center gap-2 text-sm text-ink-900 transition-colors hover:text-sun-600"
       >
         <Camera className="h-4 w-4" />
         <span>

@@ -19,7 +19,7 @@
   }
 
   ::selection {
-    @apply bg-ink-900 text-ink-50;
+    @apply bg-sun-200 text-ink-900;
   }
 }
 
@@ -29,6 +29,6 @@
   }
 
   .section-label {
-    @apply font-mono text-xs uppercase tracking-[0.2em] text-ink-500;
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-sun-600;
   }
 }

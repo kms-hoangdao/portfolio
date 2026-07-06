@@ -61,7 +61,7 @@ export default function Hero() {
           </span>
           <a
             href={`mailto:${profile.email}`}
-            className="group inline-flex items-center gap-1 text-ink-900 transition-colors hover:text-ink-600"
+            className="group inline-flex items-center gap-1 text-ink-900 transition-colors hover:text-sun-600"
           >
             {profile.email}
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

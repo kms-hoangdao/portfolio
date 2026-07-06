@@ -1,4 +1,5 @@
 import Nav from './components/Nav'
+import SunGlow from './components/SunGlow'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Skills from './sections/Skills'
@@ -13,8 +14,11 @@ export default function App() {
     <div className="relative min-h-screen">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[420px] bg-gradient-to-b from-ink-100 to-transparent"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[420px] bg-gradient-to-b from-sun-100/50 via-ink-100/60 to-transparent"
       />
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[520px]">
+        <SunGlow />
+      </div>
       <Nav />
       <main>
         <Hero />
