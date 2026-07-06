@@ -6,7 +6,7 @@ export default function About() {
     <Section id="about" label="01 · About" title="A bit about me">
       <div className="space-y-6 text-base leading-relaxed text-ink-700">
         <p>{profile.about}</p>
-        <div className="rounded-xl border border-ink-200 bg-white/60 p-5">
+        <div className="rounded-xl border border-ink-200 bg-white/60 p-5 dark:bg-white/[0.04]">
           <div className="section-label mb-2">Education</div>
           <div className="flex flex-wrap items-baseline justify-between gap-2">
             <div>

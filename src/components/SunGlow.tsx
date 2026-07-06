@@ -3,9 +3,6 @@ import { motion, useMotionValue, useSpring } from 'framer-motion'
 
 type Mode = 'interactive' | 'drift' | 'static'
 
-const GLOW =
-  'radial-gradient(circle, rgba(251,191,36,0.30), rgba(251,191,36,0.10) 45%, transparent 70%)'
-
 export default function SunGlow() {
   const ref = useRef<HTMLDivElement>(null)
   const [mode, setMode] = useState<Mode>('static')
@@ -48,13 +45,12 @@ export default function SunGlow() {
     >
       {mode === 'interactive' ? (
         <motion.div
-          style={{ x: springX, y: springY, background: GLOW }}
-          className="absolute -left-44 -top-44 h-[22rem] w-[22rem] rounded-full blur-2xl"
+          style={{ x: springX, y: springY }}
+          className="sun-glow-bg absolute -left-44 -top-44 h-[22rem] w-[22rem] rounded-full blur-2xl"
         />
       ) : (
         <div
-          style={{ background: GLOW }}
-          className={`absolute right-[-8%] top-[-25%] h-[24rem] w-[24rem] rounded-full blur-2xl ${
+          className={`sun-glow-bg absolute right-[-8%] top-[-25%] h-[24rem] w-[24rem] rounded-full blur-2xl ${
             mode === 'drift' ? 'animate-sun-drift' : ''
           }`}
         />

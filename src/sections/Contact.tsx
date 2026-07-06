@@ -33,7 +33,7 @@ export default function Contact() {
               <a
                 href={c.href}
                 {...(external && { target: '_blank', rel: 'noreferrer noopener' })}
-                className="group flex items-center justify-between rounded-xl border border-ink-200 bg-white/60 px-4 py-3 transition-all hover:border-sun-300"
+                className="group flex items-center justify-between rounded-xl border border-ink-200 bg-white/60 px-4 py-3 transition-all hover:border-sun-300 dark:bg-white/[0.04] dark:hover:border-sun-700"
               >
                 <span className="flex items-center gap-3 text-sm text-ink-700">
                   <Icon className="h-4 w-4 text-ink-500" />

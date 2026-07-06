@@ -17,7 +17,7 @@ export default function Experience() {
           >
             <span className="absolute -left-[31px] top-2.5 h-2.5 w-2.5 rounded-full bg-sun-500 ring-4 ring-ink-50" />
 
-            <div className="rounded-xl border border-ink-200 bg-white/60 p-5 transition-all hover:border-sun-300 hover:shadow-sm">
+            <div className="rounded-xl border border-ink-200 bg-white/60 p-5 transition-all hover:border-sun-300 hover:shadow-sm dark:bg-white/[0.04] dark:hover:border-sun-700">
               <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <h3 className="text-base font-medium text-ink-900">
                   {job.company}

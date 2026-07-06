@@ -14,7 +14,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.45, delay: (i % 3) * 0.05 }}
-            className="group rounded-2xl border border-ink-200 bg-white/60 p-6 transition-all hover:border-sun-300 hover:shadow-sm"
+            className="group rounded-2xl border border-ink-200 bg-white/60 p-6 transition-all hover:border-sun-300 hover:shadow-sm dark:bg-white/[0.04] dark:hover:border-sun-700"
           >
             <header className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
               {project.link ? (

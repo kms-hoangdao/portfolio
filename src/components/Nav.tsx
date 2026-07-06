@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import ThemeToggle from './ThemeToggle'
 
 const links = [
   { href: '#about', label: 'About' },
@@ -23,18 +24,21 @@ export default function Nav() {
         >
           hoang<span className="text-sun-500">.</span>helios
         </a>
-        <ul className="flex items-center gap-6">
-          {links.map((link) => (
-            <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-sm text-ink-500 transition-colors hover:text-sun-600"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="flex items-center gap-4">
+          <ul className="flex items-center gap-6">
+            {links.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  className="text-sm text-ink-500 transition-colors hover:text-sun-600 dark:hover:text-sun-400"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <ThemeToggle />
+        </div>
       </nav>
     </motion.header>
   )
