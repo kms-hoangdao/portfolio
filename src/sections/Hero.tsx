@@ -32,17 +32,22 @@ export default function Hero() {
 
         <motion.h1
           variants={item}
-          className="text-4xl font-medium leading-[1.1] tracking-tight text-ink-900 sm:text-5xl"
+          className="font-display text-5xl font-medium leading-[1.05] tracking-tight text-ink-900 sm:text-6xl"
         >
           {profile.name}.
-          <span className="block text-ink-400">{profile.title}.</span>
+          <span className="block font-normal italic text-ink-400">
+            {profile.title}.
+          </span>
         </motion.h1>
 
         <motion.p
           variants={item}
           className="mt-4 font-mono text-sm text-ink-500"
         >
-          aka <span className="text-ink-900">{profile.nickname}</span>
+          aka{' '}
+          <span className="bg-gradient-to-r from-sun-600 via-sun-500 to-sun-400 bg-clip-text font-medium text-transparent dark:from-sun-400 dark:via-sun-500 dark:to-sun-600">
+            {profile.nickname}
+          </span>
         </motion.p>
 
         <motion.p

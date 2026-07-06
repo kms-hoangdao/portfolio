@@ -19,7 +19,7 @@ export default function Section({ id, label, title, children }: Props) {
         className="mb-6 flex flex-col gap-2"
       >
         <span className="section-label">{label}</span>
-        <h2 className="text-2xl font-medium tracking-tight text-ink-900 sm:text-3xl">
+        <h2 className="font-display text-2xl font-medium tracking-tight text-ink-900 sm:text-3xl">
           {title}
         </h2>
       </motion.div>

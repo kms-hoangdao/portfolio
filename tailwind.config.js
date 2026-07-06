@@ -7,6 +7,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+        display: ['Fraunces', 'Georgia', 'ui-serif', 'serif'],
       },
       colors: {
         ink: {

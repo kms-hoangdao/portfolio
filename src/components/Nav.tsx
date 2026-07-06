@@ -22,10 +22,15 @@ export default function Nav() {
           href="#top"
           className="font-mono text-sm font-medium tracking-tight text-ink-900"
         >
-          hoang<span className="text-sun-500">.</span>helios
+          <span className="sm:hidden">
+            h<span className="text-sun-500">.</span>h
+          </span>
+          <span className="hidden sm:inline">
+            hoang<span className="text-sun-500">.</span>helios
+          </span>
         </a>
-        <div className="flex items-center gap-4">
-          <ul className="flex items-center gap-6">
+        <div className="flex items-center gap-2 sm:gap-4">
+          <ul className="flex items-center gap-4 sm:gap-6">
             {links.map((link) => (
               <li key={link.href}>
                 <a
